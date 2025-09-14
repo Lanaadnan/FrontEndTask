@@ -20,3 +20,48 @@ html {
 body {
   margin-bottom: 60px;
 }
+/* Container */
+.register-box {
+    background: #f7f5f0; /* soft beige like screenshot */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+    /* Title */
+    .register-box h3 {
+        font-weight: 600;
+        color: #333;
+    }
+
+/* Input fields */
+.custom-input {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+}
+
+    .custom-input:focus {
+        border-color: #b30059;
+        box-shadow: 0 0 5px rgba(179, 0, 89, 0.3);
+    }
+
+/* Button */
+.custom-btn {
+    background-color: #b30059;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+    .custom-btn:hover {
+        background-color: #800040;
+    }
