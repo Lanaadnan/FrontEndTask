@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FrontEndTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9702e547c8d900a029b799dd3783450c50786179")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31fb298f697d1cb9b0733c73a7222b15841f7faf")]
 [assembly: System.Reflection.AssemblyProductAttribute("FrontEndTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FrontEndTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

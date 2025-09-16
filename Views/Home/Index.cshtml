@@ -2,39 +2,39 @@
     ViewData["Title"] = "Register";
 }
 
-<div class="register-box">
+<div class="register-box" id="register-box">
     <h3 class="mb-4">Register form</h3>
     <form>
         <div class="mb-3">
-            <input type="email" class="form-control custom-input" placeholder="Email" required />
+            <input type="email" class="form-control custom-input" id="Email" placeholder="Email" onmouseover="Fun()" onmouseout="FunOut()" />
         </div>
         <div class="row">
             <div class="col-md-6 mb-3">
-                <input type="text" class="form-control custom-input" placeholder="First Name" required />
+                <input type="text" class="form-control custom-input" id="FirstName" placeholder="First Name" onmouseover="FunF()" onmouseout="FunFOut()" />
             </div>
             <div class="col-md-6 mb-3">
-                <input type="text" class="form-control custom-input" placeholder="Last Name" required />
+                <input type="text" class="form-control custom-input" id="LastName" placeholder="Last Name" onmouseover="FunL()" onmouseout="FunLOut()" />
             </div>
         </div>
 
         <div class="mb-3">
-            <input type="password" class="form-control custom-input" placeholder="Password" required />
+            <input type="password" class="form-control custom-input" id="Password" placeholder="Password" onmouseover="FunP()" onmouseout="FunPOut()" />
         </div>
         <!-- Gender Radio Buttons -->
         <div class="mb-3">
             <label class="form-label d-block mb-2">Gender</label>
             <div class="form-check form-check-inline">
-                <input class="form-check-input custom-radio" type="radio" name="gender" id="male" value="Male" required>
+                <input class="form-check-input custom-radio" type="radio" name="gender" id="male" value="Male" >
                 <label class="form-check-label" for="male">Male</label>
             </div>
             <div class="form-check form-check-inline">
                 <input class="form-check-input custom-radio" type="radio" name="gender" id="female" value="Female">
-                <label class="form-check-label" for="female">Female</label>
+                <label class="form-check-label">Female</label>
             </div>
         </div>
         <!-- Study Level -->
         <div class="mb-3">
-            <label for="studyLevel" class="form-label">Study Level</label>
+            <label  class="form-label">Study Level</label>
             <select id="studyLevel" class="form-select custom-input" required>
                 <option value="">-- Select Level --</option>
                 <option>High School</option>
@@ -46,7 +46,7 @@
         </div>
         <!-- City -->
         <div class="mb-3">
-            <label for="city" class="form-label">City</label>
+            <label  class="form-label">City</label>
             <select id="city" class="form-select custom-input" required>
                 <option value="">-- Select City --</option>
                 <option>Amman</option>
@@ -56,6 +56,36 @@
                 <option>Madaba</option>
             </select>
         </div>
-        <button type="submit" class="btn custom-btn w-100" >SAVE</button>
+        <button type="submit" class="btn custom-btn w-100" onclick="ChangeColor()">SAVE</button>
     </form>
 </div>
+<script>
+    function ChangeColor() {
+        document.getElementById('register-box').style.backgroundColor = '#C6CCD1';
+    }
+    function Fun() {
+    document.getElementById("Email").placeholder = "Type your Email here...";
+        }
+    function FunF() {
+        document.getElementById("FirstName").placeholder = "Type your First Name...";
+    }
+    function FunL() {
+        document.getElementById("LastName").placeholder = "Type your Last Name...";
+    }
+    function FunP() {
+        document.getElementById("Password").placeholder = "Type your Password here...";
+    }
+    function FunOut() {
+    document.getElementById("Email").placeholder = "Email";
+        }
+    function FunFOut() {
+        document.getElementById("FirstName").placeholder = "First Name";
+    }
+    function FunLOut() {
+        document.getElementById("LastName").placeholder = "Last Name";
+    }
+    function FunPOut() {
+        document.getElementById("Password").placeholder = "Password";
+    }
+</script>
+

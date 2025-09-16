@@ -22,7 +22,7 @@ body {
 }
 /* Container */
 .register-box {
-    background: #f7f5f0; /* soft beige like screenshot */
+    background: #ededed; /* soft beige like screenshot */
     padding: 30px;
     border-radius: 8px;
     max-width: 400px;
